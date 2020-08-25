@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gym Fitness Web Design</title>
+</head>
+<body>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </div>
+        <section class="banner">
+            <header>
+                <h2 class="logo">Your Logo</h2>
+                <div class="toggle" onClick=toggleMenu()></div>
+            </header>
+
+
+
+            <div class="overlay"></div>
+
+            <div class="text">
+                <h2>Be Strong</h2>
+
+                <h3>Never give up</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+
+                <a href="#">Join us</a>
+            </div>
+
+            <ul class="sci">
+            <li><a href="#"><img src='./assets/facebook.png' alt="facebook"/></a></li>
+            <li><a href="#"><img src='./assets/twitter.png' alt="twitter"/></a></li>
+            <li><a href="#"><img src='./assets/instagram.png' alt="instagram"/></a></li>
+        </ul>
+        
+        </section>
+</body>
+
+    <script>
+        
+        function toggleMenu() {
+        const menuToggle = document.querySelector('.toggle');
+        const BannerMenu = document.querySelector('.banner');
+
+
+        menuToggle.classList.toggle('active');
+        BannerMenu.classList.toggle('active');
+    }
+    </script>
+
+</html>
